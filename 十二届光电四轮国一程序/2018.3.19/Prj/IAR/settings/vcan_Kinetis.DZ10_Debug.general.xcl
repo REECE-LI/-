@@ -1,0 +1,17 @@
+"E:\IAR\arm\bin\armproc.dll" 
+
+"E:\IAR\arm\bin\armjlink2.dll" 
+
+"C:\Users\Administrator\Desktop\十二届光电四轮国一程序\2018.3.19\Prj\IAR\DZ10_Debug\Exe\vcan_Kinetis.out" 
+
+--plugin "E:\IAR\arm\bin\armbat.dll" 
+
+--device_macro "E:\IAR\arm\config\debugger\NXP\Kxx.dmac" 
+
+--device_macro "E:\IAR\arm\config\debugger\NXP\Kxx_Trace.dmac" 
+
+--flash_loader "E:\IAR\arm\config\flashloader\Freescale\FlashK60Xxxx.board" 
+
+
+
+

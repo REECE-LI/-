@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<settings>
+    <Stack>
+        <FillEnabled>0</FillEnabled>
+        <OverflowWarningsEnabled>1</OverflowWarningsEnabled>
+        <WarningThreshold>90</WarningThreshold>
+        <SpWarningsEnabled>1</SpWarningsEnabled>
+        <WarnLogOnly>1</WarnLogOnly>
+        <UseTrigger>1</UseTrigger>
+        <TriggerName>main</TriggerName>
+        <LimitSize>0</LimitSize>
+        <ByteLimit>50</ByteLimit>
+    </Stack>
+    <DebugChecksum>
+        <Checksum>-1312819350</Checksum>
+    </DebugChecksum>
+    <Exceptions>
+        <StopOnUncaught>_ 0</StopOnUncaught>
+        <StopOnThrow>_ 0</StopOnThrow>
+    </Exceptions>
+    <CodeCoverage>
+        <Enabled>_ 0</Enabled>
+    </CodeCoverage>
+    <CallStack>
+        <ShowArgs>0</ShowArgs>
+    </CallStack>
+    <Disassembly>
+        <MixedMode>0</MixedMode>
+    </Disassembly>
+    <JLinkDriver>
+        <CStepIntDis>_ 0</CStepIntDis>
+        <TraceBufferSize>0x00010000</TraceBufferSize>
+        <TraceStallIfFIFOFull>0x00000000</TraceStallIfFIFOFull>
+        <TracePortSize>0x00000004</TracePortSize>
+        <WatchCond>_ 0</WatchCond>
+        <Watch0>_ 0 "" 0 "" 0 "" 0 "" 0 0 0 0</Watch0>
+        <Watch1>_ 0 "" 0 "" 0 "" 0 "" 0 0 0 0</Watch1>
+        <LeaveTargetRunning>_ 0</LeaveTargetRunning>
+    </JLinkDriver>
+    <FlashMemory>
+        <FlashEraseSelection>0 1</FlashEraseSelection>
+    </FlashMemory>
+    <array_types>
+        <Fmt0>uint8[600]	3	0</Fmt0>
+        <Fmt1>unsigned char[60]	3	0</Fmt1>
+        <Fmt2>unsigned char[80]	3	0</Fmt2>
+    </array_types>
+    <watch_formats>
+        <Fmt0>{W}42:BlackEndLL	3	0</Fmt0>
+        <Fmt1>{W}42:BlackEndMaxMax	3	0</Fmt1>
+        <Fmt2>{W}42:BlackEndRR	3	0</Fmt2>
+        <Fmt3>{W}42:BreakEndL	3	0</Fmt3>
+        <Fmt4>{W}42:BreakStartL	3	0</Fmt4>
+        <Fmt5>{W}42:ClearLoopControlFlag	3	0</Fmt5>
+        <Fmt6>{W}42:Cross.RightSideling	3	0</Fmt6>
+        <Fmt7>{W}42:CrossFlag	3	0</Fmt7>
+        <Fmt8>{W}42:CrossMiddleLine	3	0</Fmt8>
+        <Fmt9>{W}42:Error	0	9</Fmt9>
+        <Fmt10>{W}42:HopNumber	3	0</Fmt10>
+        <Fmt11>{W}42:InflectionPointL.InflectionPointCol	3	0</Fmt11>
+        <Fmt12>{W}42:InflectionPointL.InflectionPointRow	3	0</Fmt12>
+        <Fmt13>{W}42:InflectionPointR.InflectionPointCol	3	0</Fmt13>
+        <Fmt14>{W}42:InflectionPointR.InflectionPointRow	3	0</Fmt14>
+        <Fmt15>{W}42:LastLastObstacleLfetNearFlag	3	0</Fmt15>
+        <Fmt16>{W}42:LastLoopFlag	3	0</Fmt16>
+        <Fmt17>{W}42:LastObstacleLfetNearFlag	3	0</Fmt17>
+        <Fmt18>{W}42:LeftExitBottorRow	3	0</Fmt18>
+        <Fmt19>{W}42:LeftExitTopCol	3	0</Fmt19>
+        <Fmt20>{W}42:LeftExitTopRow	3	0</Fmt20>
+        <Fmt21>{W}42:LeftInflectionPointFlag	3	0</Fmt21>
+        <Fmt22>{W}42:Loop.LeftSidelingLoop	3	0</Fmt22>
+        <Fmt23>{W}42:Loop.StrightIntoLoop	3	0</Fmt23>
+        <Fmt24>{W}42:LoopEixtL	3	2</Fmt24>
+        <Fmt25>{W}42:LoopEixtR	3	2</Fmt25>
+        <Fmt26>{W}42:LoopExit.LoopInDelay	3	0</Fmt26>
+        <Fmt27>{W}42:LoopExit.LoopInFlag	3	0</Fmt27>
+        <Fmt28>{W}42:LoopExit.RightControlExit	3	0</Fmt28>
+        <Fmt29>{W}42:LoopFlag	3	0</Fmt29>
+        <Fmt30>{W}42:LoopLeftControlFlag	3	0</Fmt30>
+        <Fmt31>{W}42:LoopRightControlFlag	3	0</Fmt31>
+        <Fmt32>{W}42:LoopRightOkFlag	3	0</Fmt32>
+        <Fmt33>{W}42:NumberL	3	0</Fmt33>
+        <Fmt34>{W}42:NumberR	3	0</Fmt34>
+        <Fmt35>{W}42:ObstacleLfetColStart	3	0</Fmt35>
+        <Fmt36>{W}42:ObstacleLfetNearCol	3	0</Fmt36>
+        <Fmt37>{W}42:ObstacleLfetNearFlag	3	0</Fmt37>
+        <Fmt38>{W}42:ObstacleLfetOkFlag	3	0</Fmt38>
+        <Fmt39>{W}42:ObstacleLfetRowNum	3	0</Fmt39>
+        <Fmt40>{W}42:ObstacleLfetRowStart	3	0</Fmt40>
+        <Fmt41>{W}42:OpenLoopExitRepairFlagL	3	0</Fmt41>
+        <Fmt42>{W}42:OpenLoopExitRepairFlagR	3	0</Fmt42>
+        <Fmt43>{W}42:RightInflectionPointFlag	3	0</Fmt43>
+        <Fmt44>{W}42:RightScanCol	0	2</Fmt44>
+        <Fmt45>{W}42:RightScanFlag	3	0</Fmt45>
+        <Fmt46>{W}42:Row	3	0</Fmt46>
+        <Fmt47>{W}42:Scan.StarCol	3	0</Fmt47>
+        <Fmt48>{W}42:ScanColEndLeft	3	0</Fmt48>
+        <Fmt49>{W}42:ScanColStartLeft	3	0</Fmt49>
+        <Fmt50>{W}42:SpeedErrorL	3	1</Fmt50>
+        <Fmt51>{W}42:SpeedPerErrorR	3	7</Fmt51>
+        <Fmt52>{W}42:SpeedSet	0	9</Fmt52>
+        <Fmt53>{W}42:StartingLineFlag	3	0</Fmt53>
+        <Fmt54>{W}42:X	3	0</Fmt54>
+        <Fmt55>{W}42:center_lie	3	0</Fmt55>
+        <Fmt56>{W}42:cross_flag	3	0</Fmt56>
+        <Fmt57>{W}42:get_left_flag	3	0</Fmt57>
+        <Fmt58>{W}42:get_right_flag	3	0</Fmt58>
+        <Fmt59>{W}42:img_usefull	3	0</Fmt59>
+        <Fmt60>{W}42:img_usefull_flag	3	0</Fmt60>
+        <Fmt61>{W}42:left_blackline	3	0</Fmt61>
+        <Fmt62>{W}42:left_lose_flag	3	0</Fmt62>
+        <Fmt63>{W}42:left_usefull_flag	3	0</Fmt63>
+        <Fmt64>{W}42:right_blackline	3	0</Fmt64>
+        <Fmt65>{W}42:right_usefull_flag	3	0</Fmt65>
+        <Fmt66>{W}42:track_type_flag	3	0</Fmt66>
+    </watch_formats>
+    <Log_file>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ ""</LogFile>
+        <Category>_ 0</Category>
+    </Log_file>
+    <TermIOLog>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ ""</LogFile>
+    </TermIOLog>
+    <DriverProfiling>
+        <Enabled>0</Enabled>
+        <Mode>1</Mode>
+        <Graph>0</Graph>
+        <Symbiont>0</Symbiont>
+        <Exclusions />
+    </DriverProfiling>
+    <CallStackLog>
+        <Enabled>0</Enabled>
+    </CallStackLog>
+    <CallStackStripe>
+        <ShowTiming>1</ShowTiming>
+    </CallStackStripe>
+    <Disassemble_mode>
+        <mode>2</mode>
+    </Disassemble_mode>
+    <Trace1>
+        <Enabled>0</Enabled>
+        <ShowSource>1</ShowSource>
+    </Trace1>
+    <InterruptLog>
+        <LogEnabled>0</LogEnabled>
+        <GraphEnabled>0</GraphEnabled>
+        <ShowTimeLog>1</ShowTimeLog>
+        <SumEnabled>0</SumEnabled>
+        <ShowTimeSum>1</ShowTimeSum>
+        <SumSortOrder>0</SumSortOrder>
+    </InterruptLog>
+    <DataLog>
+        <LogEnabled>0</LogEnabled>
+        <GraphEnabled>0</GraphEnabled>
+        <ShowTimeLog>1</ShowTimeLog>
+        <SumEnabled>0</SumEnabled>
+        <ShowTimeSum>1</ShowTimeSum>
+    </DataLog>
+    <DisassembleMode>
+        <mode>0</mode>
+    </DisassembleMode>
+    <Breakpoints2>
+        <Count>0</Count>
+    </Breakpoints2>
+    <Interrupts>
+        <Enabled>1</Enabled>
+    </Interrupts>
+    <MemConfig>
+        <Base>1</Base>
+        <Manual>0</Manual>
+        <Ddf>1</Ddf>
+        <TypeViol>0</TypeViol>
+        <Stop>1</Stop>
+    </MemConfig>
+    <Aliases>
+        <A0>_ "C:\Users\Administrator.USER-20160105UO\Desktop\边缘追踪3.0\Board\src\VCAN_SCCB.c" ""</A0>
+        <A1>_ "C:\Users\Administrator.USER-20160105UO\Desktop\边缘追踪3.0\Chip\src\MK60_SysTick.c" ""</A1>
+        <A2>_ "C:\Users\Administrator.USER-20160105UO\Desktop\边缘追踪3.0\Chip\src\MK60_uart.c" ""</A2>
+        <A3>_ "E:\波波\2018.3.19\12届单车摄像头 6.0(新车，液晶R)\Chip\src\misc.c" ""</A3>
+        <A4>_ "E:\波波\5.17第二辆车成功\12届单车摄像头 6.0(新车，液晶R)\Chip\src\misc.c" ""</A4>
+        <A5>_ "F:\我的程序\融合时期\边缘追踪3.0\Board\src\VCAN_OV7725_Eagle.c" ""</A5>
+        <A6>_ "F:\我的程序\边缘追踪\App\main.c" ""</A6>
+        <A7>_ "F:\我的程序\边缘追踪\Chip\src\IAR\system_MK60DZ10.c" ""</A7>
+        <A8>_ "F:\我的程序\边缘追踪\Chip\src\MK60_SysTick.c" ""</A8>
+        <A9>_ "F:\我的程序\边缘追踪\Chip\src\MK60_wdog.c" ""</A9>
+        <A10>_ "F:\我的程序\边缘追踪\Chip\src\misc.c" ""</A10>
+        <A11>_ "F:\野火鹰眼摄像头\摄像头\LCD_摄像头\Board\src\VCAN_camera.c" ""</A11>
+        <A12>_ "F:\野火鹰眼摄像头\摄像头\LCD_摄像头\Board\src\VCAN_computer.c" ""</A12>
+        <A13>_ "F:\野火鹰眼摄像头\摄像头\LCD_摄像头\Chip\src\IAR\startup_MK60DZ10.s" ""</A13>
+        <A14>_ "F:\野火鹰眼摄像头\摄像头\LCD_摄像头\Chip\src\IAR\system_MK60DZ10.c" ""</A14>
+        <A15>_ "F:\野火鹰眼摄像头\摄像头\LCD_摄像头\Chip\src\MK60_uart.c" ""</A15>
+        <A16>_ "F:\野火鹰眼摄像头\摄像头\LCD_摄像头\Chip\src\MK60_wdog.c" ""</A16>
+        <A17>_ "F:\野火鹰眼摄像头\摄像头\LCD_摄像头\Chip\src\misc.c" ""</A17>
+        <A18>_ "G:\我的项目实践\四轮摄像头\12届单车摄像头 6.0\12届单车摄像头\App\main.c" ""</A18>
+        <Count>19</Count>
+        <SuppressDialog>1</SuppressDialog>
+    </Aliases>
+    <Simulator>
+        <Freq>10000000</Freq>
+        <FreqHi>0</FreqHi>
+        <MultiCoreRunAll>1</MultiCoreRunAll>
+    </Simulator>
+</settings>
