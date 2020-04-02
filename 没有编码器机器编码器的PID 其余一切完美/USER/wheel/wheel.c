@@ -14,7 +14,7 @@ void CalculateError(void)               //增加权重的Error
     CenterSum=0;            
     CenterMeanValue=0;           
     WeightSum=0;    
-    for(i=119; i>30; i--)       
+    for(i=119; i>60; i--)       
       {      
         CenterSum += middleline[i] * Weight[i];
         WeightSum += Weight[i];       

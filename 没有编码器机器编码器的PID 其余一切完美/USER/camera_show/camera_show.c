@@ -34,9 +34,10 @@ void DMA0_IRQHandler()
     
     Size_t imgsize  = {188, 120};                       //图像大小
     
-    
+    uint8 LeftLose, RightLose, AllLose;
+    uint8 LeftEdge[ROW], RightEdge[ROW];
     uint8  imagebuff[ROW][COL];      //图像二值化数组
-    uint8  middleline[120];          //存储中线的数组
+    uint8  middleline[ROW];          //存储中线的数组
 //------------------------------------------------------------------------------
 void camera_search()
 {
@@ -77,8 +78,8 @@ void camera_search()
 
 void search_middleline(void)
 {
-  uint8 i, j, LeftLose, RightLose, AllLose, jj;
-  uint8 LeftEdge[COL], RightEdge[COL], Width[ROW];
+  uint8 i, j, jj;
+  uint8  Width[ROW];
   Site_t site_middle = {0, 0};
   uint8 middleLine = 94;
   
@@ -92,7 +93,7 @@ void search_middleline(void)
    for(i=0; i < ROW; i++)//赋初值             
   { 
        LeftEdge[i] = 0;
-       RightEdge[i] = COL;
+       RightEdge[i] = COL-1;
        middleline[i] = COL/2;
        Width[i] = i*2-60;     //动态路宽
       
@@ -114,7 +115,7 @@ for(i = ROW-1; i >= 90; i--)                                                //首
       }      
     while(j >= 2)//j>=2有效范围内进行搜寻 
       {
-          if(imagebuff[i][j] == 255 && imagebuff[i][j-1] == 0 && imagebuff[i][j-2] == 0)//从右向左找到白白黑跳变 
+          if(imagebuff[i][j] == 255 && imagebuff[i][j-1] == 255 && imagebuff[i][j-2] == 0)//从右向左找到白白黑跳变 
             {
                  LeftEdge[i] = j;                                               //找到则赋值 找不到保持原值0      
                  break;                                                         //跳出本行寻线
@@ -140,7 +141,7 @@ for(i = ROW-1; i >= 90; i--)                                                //首
      while(j <= COL-2)
        {
            
-          if(imagebuff[i][j] == 255 && imagebuff[i][j+1] == 0 && imagebuff[i][j+2] == 0)//从左向右找到白白黑跳变点
+          if(imagebuff[i][j] == 255 && imagebuff[i][j+1] == 255 && imagebuff[i][j+2] == 0)//从左向右找到白白黑跳变点
           {
                  RightEdge[i] = j;                                                //找到则赋值   找不到保持原值
                  break;                                                           //跳出本行寻线
@@ -242,7 +243,7 @@ for(i = ROW-1; i >= 90; i--)                                                //首
          jj = ((LeftEdge[i+1]-13) <= 1)? 1:(LeftEdge[i+1]-13);        
       while(j >= jj)       
       {       
-          if(imagebuff[i][j]==255 && imagebuff[i][j-1]==0&& imagebuff[i][j-2]==0)  
+          if(imagebuff[i][j]==255 && imagebuff[i][j-1]==255&& imagebuff[i][j-2]==0)  
           {
                LeftEdge[i] = j;
                break;
@@ -253,7 +254,7 @@ for(i = ROW-1; i >= 90; i--)                                                //首
          jj = ((RightEdge[i+1]+13) >= COL-2)? COL-2:(RightEdge[i+1]+13);    
       while(j <= jj)             
       {
-          if(imagebuff[i][j]==255 && imagebuff[i][j+1]==0 && imagebuff[i][j+2]==0) 
+          if(imagebuff[i][j]==255 && imagebuff[i][j+1]==255 && imagebuff[i][j+2]==0) 
           {
                RightEdge[i] = j;
                break;    
@@ -268,7 +269,7 @@ for(i = ROW-1; i >= 90; i--)                                                //首
          jj = ((LeftEdge[i+1]-13) <= 1)? 1:(LeftEdge[i+1]-13);              
       while(j >= jj)   
       {     
-          if(imagebuff[i][j]==255 && imagebuff[i][j-1]==0 && imagebuff[i][j-2]==0)
+          if(imagebuff[i][j]==255 && imagebuff[i][j-1]==255 && imagebuff[i][j-2]==0)
           {
                LeftEdge[i] = j;
                break;
@@ -282,7 +283,7 @@ for(i = ROW-1; i >= 90; i--)                                                //首
       }
       while(j <= COL-2)      
       {    
-          if(imagebuff[i][j]==255 && imagebuff[i][j+1]==0&&imagebuff[i][j+2]==0)
+          if(imagebuff[i][j]==255 && imagebuff[i][j+1]==255&&imagebuff[i][j+2]==0)
           {
                RightEdge[i] = j;
                break;

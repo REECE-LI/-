@@ -87,10 +87,10 @@ void HardWare_Init(void)
      { 
               StartingLineFlag=0;
               camera_get_img();//（耗时13.4ms）图像采集
-              img_extract(img,imgbuff);
-              SearchCenterBlackline();
+              img_extract(img,imgbuff);//二值化
+              SearchCenterBlackline();            
               GetBlackEndParam();//获取黑线截止行
-              //StartingLineFlag=StartingLineRecognition();
+              StartingLineFlag=StartingLineRecognition();
               if(!StartingLineFlag)
               {
                 CrossRecognition(&Cross);//十字识别

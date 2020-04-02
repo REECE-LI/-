@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"common.h": "c",
+			"chrono": "c",
+			"unordered_map": "c"
+		}
+	}
+}

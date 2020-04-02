@@ -87,7 +87,7 @@ result_e main_func(void)
 
 result_e wheel_func(void)
 {
-   // Site_t site     = {0, 0};                           //显示图像左上角位置
+    //Site_t site     = {0, 0};                           //显示图像左上角位置
 
     result_e result;
     KEY_MSG_t keymsg;
